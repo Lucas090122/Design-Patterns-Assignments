@@ -6,7 +6,7 @@ public class TileGraphicFactory {
 
     public static TileGraphic getTileGraphic(String tileType) {
         if (!graphics.containsKey(tileType)) {
-            String imagePath = "/images/" + tileType.toLowerCase() + ".png"; // 比如 grass -> /images/grass.png
+            String imagePath = "/images/" + tileType.toLowerCase() + ".png";
             TileGraphic graphic = new TileGraphic(imagePath);
             graphics.put(tileType, graphic);
         }
